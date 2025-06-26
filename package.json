@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1",
+    "dotenv": "^16.5.0",
+    "json-server": "^1.0.0-beta.3"
+  },
+  "name": "phase-1-javascript-project-mode",
+  "version": "1.0.0",
+  "description": "- Design and architect features across a frontend - Communicate and collaborate in a technical environment - Integrate JavaScript and an external API - Debug issues in small- to medium-sized projects - Build and iterate on a project MVP",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeshurunmuchugingugi/phase-1-javascript-project-mode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jeshurunmuchugingugi/phase-1-javascript-project-mode/issues"
+  },
+  "homepage": "https://github.com/jeshurunmuchugingugi/phase-1-javascript-project-mode#readme"
+}

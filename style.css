@@ -1,0 +1,248 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 150vh;
+  background: #1e2337;
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: block;
+  margin:0px auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+header aside, article {
+  width: 85%;
+  height: 100%;
+  background: #060808;
+}
+header aside {
+  width: 15%;
+  background-color: rgb(6, 8, 8);
+  backdrop-filter: blur(10px); /* Optional: adds blur to what's behind */
+  box-shadow: 2px 0 15px rgba(31, 31, 31, 0.06);
+}
+header aside h1 {
+  width: 100%;
+  margin: auto auto;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+header aside h3 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+header aside h1 i {
+  margin-left: 5px;
+
+}
+header aside  button {
+  display: block;
+  padding: 10px 30px;
+  margin:0px auto 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  background: #270458;
+  color: #fff;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: start;
+  transition: .3s linear;
+}
+header aside  button  i {
+  align-items: start;
+  text-align: start;
+}
+header aside  button:hover {
+  background: #1e2337;
+}
+header aside  button i {
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+header aside ul {
+  position: relative;
+  margin-top: 0px;
+  margin-left: 12%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+header aside ul::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  width: 90%;
+  height: 2px;
+  background: rgba(184, 184, 184, .1);
+  bottom: 0;
+}
+header aside ul li {
+  padding: 2.5px 0px;
+}
+header aside ul li a {
+  color: rgb(255,255,255,.7);
+  font-size: 15px;
+  font-weight: 400;
+  transition: .3s linear;
+}
+header aside ul li a:hover {
+  padding: 10px 10px;
+  color: #fff;
+}
+
+header aside ul li a i {
+  margin-right: 15px;
+}
+ header aside ul .active_li {
+  border-left: 3px solid #fff;
+ }
+
+header aside ul .active_li a {
+  color: #fff;
+  font-size: 14px;
+}
+header article nav {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.144); /* Updated for more visible but soft depth */
+  padding: 0px 30px;
+  background: #060808;
+}
+
+header article nav .search {
+width: 50%;
+padding: 8px 10px;
+transition: .3s linear;
+display: block;
+text-align: center;
+background-color: #1F1D1B;
+border-radius: 40px;
+margin: 2% 0px;
+align-items: center;
+justify-content: center;
+transition: .5 linear;
+}
+
+header article nav .search input {
+  width: 95%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  color: rgb(112, 112, 112);
+  transition: .5s linear;
+}
+header article nav .search input::placeholder {
+  color: #5a5a5a;
+  font-family: 'Poppins',sans-serif;
+  font-size: 12px;
+  transition: .5s linear;
+}
+
+header article nav .search i{
+color: #5a5a5a;
+font: 13px;
+align-items: center;
+justify-content: center;
+text-align: center;
+transition: .5s linear;
+border: 30px;
+}
+
+header article nav .right_bx{
+width: 45%;
+/* border: 1px solid #fff; */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+color: white;
+  }
+  header article nav .right_bx a {
+    color: white;
+    display: flex;
+    gap: 5px;
+  }
+
+  header article nav .search .card {
+    position: absolute;
+    width: 1100px;
+    height: 500px;
+    border: 1px solid #fff;
+    top: 120px;
+    left: 300px;
+    border-radius: 30px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-direction: row;
+  }
+
+  header article nav .search .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(184, 184, 184, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    z-index: -1;
+  }
+
+  header article nav .search .card img{
+    width: 1000px;
+    position: relative;
+    display: block;
+    border-radius: 30px ;
+    height: 100%;
+    z-index: -1;
+  }
+  header article nav .search .card .card-info {
+    position: absolute;
+    top:  25%;
+    color: white;
+    padding: 6px 12px;
+    font-size: 16px;
+    text-align: start;
+    left: 10px;
+  }
+  header article nav .search .card .card-info p {
+    width: 460px;
+  }
