@@ -11,12 +11,12 @@
 <title>Document</title>
 </head>
 <body>
-
+ 
   <header class="header-section">
 
     <aside>
-      <h1>GameByte<i class="bi bi-controller"></i></h1>
-      <button><i class="bi bi-gift"></i>WishList</button>
+      <h1 id="logo"><a href="">GameByte<i class="bi bi-controller"></i></a></h1>
+      <button id="wishlist"><i class="bi bi-gift"></i>WishList</button>
       <h3 class="genre">Genre</h3>
       <ul>
         <li><a href="#"><i class="bi bi-controller"></i> Action</a></li>
@@ -38,19 +38,20 @@
         <li><a href="#"><i class="bi bi-apple"></i> iOS</a></li>        
       </ul>
     </aside>
-
-    <article>
+    <!-- Navigation Bar  -->
+    <article id="article-append">
       <nav>
         <div class="right_bx">
           <a href="#"><i class="bi bi-joystick"></i>All Games</a>
-          <a href="#"><i class="bi bi-heart-fill"></i>Popular</a>
-          <a href="#"><i class="bi bi-fire"></i>New Releases</a>
         </div>
 
         <div class="search">
-          <input type="text" name="" placeholder="Search here...">
-          <i class="bi bi-search"></i>
+          <form action="" id="search-form">
+            <input type="text" name="" id="search-inputfield" placeholder="Search here...">
+          <button type="submit"><i class="bi bi-search"></i></button>
+          </form>
 
+<!-- 
           <div class="card">
             <img src="https://assets-prd.ignimgs.com/2023/12/18/gtakey-1702926695870.png" alt="">
             <div class="card-info">
@@ -61,13 +62,310 @@
               </p>
               <button><i class="bi bi-gift"></i>Add To Wish List</button>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </nav>
+ <!-- CARD DEMOSTRATION REFERENCE CODE -->
+  <section id="display-search">
+        <!-- <div class="game-card">
+          <div class="game-thumb">
+            <img src="https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg" alt="Game Cover">
+          </div>
+          <div class="game-info">
+            <div class="platform-rating">
+              <span class="platform">
+                <i class="bi bi-playstation"></i>
+                <i class="bi bi-playstation"></i>
+              </span>
+              <button class="wishlist-icon"><i class="bi bi-gift"></i></button>
+            </div>
+            
+            <h2 class="title">As Dusk Falls</h2>
+             
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor itaque veniam, 
+              voluptatum quo quisquam quis amet quod obcaecati quae eveniet 
+              dolores saepe. Ut eos, delectus nihil aliquam optio blanditiis dolores.</p>
+
+            <p><strong>Release date:</strong> Jul 18, 2022</p>
+            <hr>
+            <p id="genre-p"><strong>Genres:</strong> <a href="#">Adventure</a></p>
+          </div>
+        </div>          -->
+      </section>
+<!-- IMMAGE LOOP SLIDER -->
+      <!-- <div id="homepage-recommendation">
+        <div class="game1">
+          <h3>Reccomended For You</h3>
+          <div class="game_bx">
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <div class="game1">
+          <h3>Reccomended For You</h3>
+          <div class="game_bx">
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div> -->
+<!-- HOME PAGE RECOMMENDATION DATA -->
+      <div id="homepage-recommendation">
+        <div class="game1">
+          <h3>Reccomended For You</h3>
+          <div class="game_bx">
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+          </div>
+         </div>  
+  
+         <div class="game1">
+          <h3>Reccomended For You</h3>
+          <div class="game_bx">
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg" alt="">
+              <div class="content">
+                <div class="left">
+                  <h5>Grand Theft Auto</h5>
+                  <p>Jahid  Khan[KDS CODERS]</p>
+                </div>
+                <h6>354,452 Views</h6>
+              </div>
+            </div>
+          </div>
+         </div>  
+      </div>
     </article>
+<!-- 
+    WEBSITE FOOTER -->
+
   </header>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
